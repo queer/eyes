@@ -1,4 +1,4 @@
-# :eyes:
+# eyes
 
 A meme of writing something like sentry.io but js + mongo
 
