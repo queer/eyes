@@ -1,23 +1,10 @@
-import farmhash from 'farmhash'
-
 export default class Event {
   constructor() {
-    // Event id. Should be a snowflake
-    this.id = ''
-    // Event message. Optional
+    this.event_id = ''
+    this.culprit = ''
+    this.timestamp = ''
     this.message = ''
-    this.hash = ''
-    // Tags. Optional
-    this.tags = {}
-    // Stacktrace lines. Optional
-    this.stacktrace = []
-  }
-
-  static hashContent(data) {
-    if (typeof data === 'object' || data instanceof Object) {
-      data = JSON.stringify(data)
-    }
-    return farmhash.hash64(data)
+    this.exception = []
   }
 
   static fromJson(json) {
@@ -25,9 +12,7 @@ export default class Event {
       json = JSON.parse(json)
     }
     if (typeof json === 'object' || json instanceof Object) {
-      const obj = Object.assign(new Event(), json)
-      obj.hash = Event.hashContent(json)
-      return obj
+      return Object.assign(new Event(), json)
     } else {
       throw new Error('JSON not a string or object!')
     }

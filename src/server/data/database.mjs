@@ -4,8 +4,10 @@ import GenerateSchema from 'generate-schema'
 import config from '../config'
 
 import Event from '../shared/event'
+import Project from '../shared/project'
 
 export const EventSchema = new mongoose.Schema(GenerateSchema.mongoose(new Event()))
+export const ProjectSchema = new mongoose.Schema(GenerateSchema.mongoose(new Project()))
 
 export default class Database {
   constructor() {

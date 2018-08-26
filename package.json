@@ -1,7 +1,7 @@
 {
-  "name": "simple-react-full-stack",
-  "version": "1.0.0",
-  "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
+  "name": "eyes",
+  "version": "0.0.1",
+  "description": ":eyes:",
   "main": "src/server/index.js",
   "scripts": {
     "start": "node src/server/index.js",
@@ -15,7 +15,6 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "farmhash": "^2.1.0",
     "generate-schema": "^2.6.0",
     "mongodb": "^3.1.3",
     "mongoose": "^5.2.9",
