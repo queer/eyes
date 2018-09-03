@@ -2,6 +2,8 @@
 
 A meme of writing something like sentry.io but js + mongo
 
+Join us on Discord! https://discord.gg/35Rhp8r
+
 ## TODO
 
 - Authentication (probably just github oauth? maybe auth0 for memes?)
